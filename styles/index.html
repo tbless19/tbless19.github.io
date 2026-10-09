@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Portfolio styles | Prince Tawiah</title>
+<style>
+:root{--bg:#f7f6f2;--panel:#fff;--ink:#16181d;--muted:#5f6470;--line:#e2e0d8;--sig:#6d4aff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0f14;--panel:#171922;--ink:#eceef4;--muted:#9aa0ae;--line:#272a36;--sig:#a48bff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+main{width:min(880px,100%);margin:0 auto;padding:clamp(2rem,6vw,4rem) 16px}
+h1{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-.02em;margin:0 0 .4rem}
+p{color:var(--muted);margin:0 0 2rem}
+ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.3rem;transition:transform .2s,border-color .2s}
+a.card:hover{transform:translateY(-3px);border-color:var(--sig)}
+a.card b{display:block;font-size:1.1rem;margin-bottom:.2rem}
+a.card span{color:var(--muted);font-size:.92rem}
+.back{display:inline-block;margin-top:2rem;color:var(--sig);font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+  <h1>Other portfolio styles</h1>
+  <p>Alternate designs of the same portfolio, kept for reference.</p>
+  <ul>
+    <li><a class="card" href="graph-paper/"><b>Graph Paper</b><span>Graph-paper grid, signal red, Cascade transition</span></a></li>
+    <li><a class="card" href="editorial/"><b>Editorial</b><span>Serif type on warm paper, Curtain transition</span></a></li>
+    <li><a class="card" href="midnight/"><b>Midnight</b><span>Dark navy with green-to-blue glow, Wipe transition</span></a></li>
+    <li><a class="card" href="swiss/"><b>Swiss</b><span>Black and white grid, one blue accent, Slide transition</span></a></li>
+  </ul>
+  <a class="back" href="../">← Back to the main site</a>
+</main>
+</body>
+</html>
